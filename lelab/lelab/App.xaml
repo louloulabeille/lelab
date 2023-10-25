@@ -4,8 +4,6 @@
              x:Class="lelab.App">
     <!--
         Define global resources and styles here, that apply to all pages in your app.
-    -->
-    <Application.Resources>
         <ResourceDictionary>
             <Color x:Key="Primary">#2196F3</Color>
             <Style TargetType="Button">
@@ -27,6 +25,27 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
-        </ResourceDictionary>        
+        </ResourceDictionary>
+        
+    -->
+    <Application.Resources>
+        <Style TargetType="NavigationPage" ApplyToDerivedTypes="True">
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="BarBackgroundColor" Value="#4e89a3"/>
+            <Setter Property="BarTextColor" Value="White"/>
+        </Style>
+        <Style TargetType="ContentPage" ApplyToDerivedTypes="True">
+            <Setter Property="BackgroundColor" Value="White" />
+        </Style>
+        <!--#region style explicite avec un nom-->
+        <Style x:Key="boutonLabStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#518faa" />
+            <Setter Property="TextColor" Value="White"/>
+        </Style>
+        <!-- style bouton -->
+        <!--<Style TargetType="Button" ApplyToDerivedTypes="True">
+            <Setter Property="BackgroundColor" Value="Green"></Setter>
+            <Setter Property="TextColor" Value="White"></Setter>
+        </Style>-->
     </Application.Resources>
 </Application>

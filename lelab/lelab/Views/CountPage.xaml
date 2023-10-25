@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="lelab.Views.CountPage"
-             BackgroundColor="#909090">
-    <ContentPage.Content >
+             x:Class="lelab.Views.CountPage" Title="Compteur">
+    <ContentPage.Content>
         <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Spacing="0">
-            <Label Text="0" FontSize="125" TextColor="White" HorizontalTextAlignment="Center"/>
-            <Button Text="Compter"></Button>
+            <Label Text="0" x:Name="compteur_Label" FontSize="125" TextColor="White" HorizontalTextAlignment="Center"/>
+            <Button Style="{StaticResource boutonLabStyle}" Text="Compter" Clicked="CountButtonClick" ></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
