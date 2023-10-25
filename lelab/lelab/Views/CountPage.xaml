@@ -3,12 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="lelab.Views.CountPage" Title="Compteur">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Spacing="0">
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <Label Text="0" x:Name="compteur_Label" FontSize="125" HorizontalTextAlignment="Center"/>
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0">
+            <StackLayout BackgroundColor="#518faa" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <Label Text="0" x:Name="compteur_Label" TextColor="White" FontSize="125" HorizontalTextAlignment="Center">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <OnPlatform.iOS>HelveticaNeue-Thin</OnPlatform.iOS>
+                            <OnPlatform.Android>HelveticaNeue-Thin.tff#HelveticaNeue-Thin</OnPlatform.Android>
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
             </StackLayout>
-            <StackLayout>
-                <Button Style="{StaticResource boutonLabStyle}" Text="Compter" Clicked="CountButtonClick" ></Button>
+            <Image Source="lab_separator.png" Aspect="Fill"></Image>
+            <StackLayout BackgroundColor="white" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"> 
+                <Button Style="{StaticResource boutonLabStyle}" Text="Compter" Clicked="CountButtonClick" Margin="30,0,30,0"></Button>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
