@@ -4,6 +4,8 @@
              x:Class="lelab.Views.MenuPage" Title="Menu" >
     <ContentPage.Content>
         <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="0"> 
+            
+            <!--#region Affichage du bouton -->
             <StackLayout BackgroundColor="#518faa" Orientation="Vertical" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
                 <Image Source="lab_logo.png" Aspect="AspectFit" HeightRequest="100" Margin="0,35,0,0"></Image>
                 <Label Text="Le Lab" FontSize="50" FontAttributes="Bold" Margin="0,10,0,20"
@@ -17,11 +19,15 @@
                 </Label>
             </StackLayout>
             <Image Source="lab_separator.png" Aspect="Fill"></Image><!-- aspect = fill affiche image sur toute la capsule x et y -->
+            
+            <!--#region bouton de navigation-->
             <StackLayout Margin="30,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
                 <Button Margin="0,20,0,0" Style="{StaticResource boutonLabStyle}" BackgroundColor="#c1ab24" Text="COMPTEUR" 
                         WidthRequest="120" Clicked="CounterButtonClick" HorizontalOptions="FillAndExpand"></Button>
                 <Button Margin="0,20,0,0" Style="{StaticResource boutonLabStyle}" BackgroundColor="#c19121" Text="Tabs" 
                         WidthRequest="120" Clicked="TabVoitureButtonClick" HorizontalOptions="FillAndExpand"></Button>
+                <Button Margin="0,20,0,0" Style="{StaticResource boutonLabStyle}" BackgroundColor="#c60e3c" Text="Liste" 
+                        WidthRequest="120" Clicked="ListPageButtonClick" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
         </StackLayout>
         

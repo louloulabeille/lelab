@@ -60,6 +60,6 @@
             <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
             <Setter Property="VerticalOptions" Value="FillAndExpand"></Setter>
         </Style>
-        
+
     </Application.Resources>
 </Application>
