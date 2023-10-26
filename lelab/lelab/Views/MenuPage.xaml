@@ -18,9 +18,10 @@
             </StackLayout>
             <Image Source="lab_separator.png" Aspect="Fill"></Image><!-- aspect = fill affiche image sur toute la capsule x et y -->
             <StackLayout Margin="30,0" Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" >
-                
                 <Button Margin="0,20,0,0" Style="{StaticResource boutonLabStyle}" BackgroundColor="#c1ab24" Text="COMPTEUR" 
                         WidthRequest="120" Clicked="CounterButtonClick" HorizontalOptions="FillAndExpand"></Button>
+                <Button Margin="0,20,0,0" Style="{StaticResource boutonLabStyle}" BackgroundColor="#c1ab24" Text="Tabs" 
+                        WidthRequest="120" Clicked="TabVoitureButtonClick" HorizontalOptions="FillAndExpand"></Button>
             </StackLayout>
         </StackLayout>
         

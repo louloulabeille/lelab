@@ -155,4 +155,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lab_avion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\lab_voiture.png" />
+  </ItemGroup>
 </Project>

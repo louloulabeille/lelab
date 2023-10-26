@@ -22,5 +22,10 @@ namespace lelab.Views
             this.Navigation.PushAsync(new CountPage());
             //this.Navigation.PushModalAsync(new CountPage());
         }
+
+        private void TabVoitureButtonClick(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new TabsPage());
+        }
     }
 }

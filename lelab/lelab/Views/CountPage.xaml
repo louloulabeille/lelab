@@ -9,15 +9,15 @@
                     <Label.FontFamily>
                         <OnPlatform x:TypeArguments="x:String">
                             <OnPlatform.iOS>HelveticaNeue-Thin</OnPlatform.iOS>
-                            <OnPlatform.Android>HelveticaNeue-Thin.tff#HelveticaNeue-Thin</OnPlatform.Android>
+                            <OnPlatform.Android>HelveticaNeue-Thin.ttf#HelveticaNeue-Thin</OnPlatform.Android>
                         </OnPlatform>
                     </Label.FontFamily>
                 </Label>
             </StackLayout>
             <Image Source="lab_separator.png" Aspect="Fill"></Image>
-            <StackLayout BackgroundColor="white" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"> 
+            <Frame BackgroundColor="white" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" HasShadow="False"> 
                 <Button Style="{StaticResource boutonLabStyle}" Text="Compter" Clicked="CountButtonClick" Margin="30,0,30,0"></Button>
-            </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

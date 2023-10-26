@@ -47,5 +47,19 @@
             <Setter Property="BackgroundColor" Value="Green"></Setter>
             <Setter Property="TextColor" Value="White"></Setter>
         </Style>-->
+        <!--#region  image Tab-->
+        <Style x:Key="imgTab" TargetType="Image">
+            <Setter Property="Margin" Value="30,0,30,0"></Setter>
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="VerticalOptions" Value="CenterAndExpand"></Setter>
+            <Setter Property="Aspect" Value="AspectFit"></Setter>
+            <Setter Property="WidthRequest" Value="300"></Setter>
+        </Style>
+        <Style x:Key="stackLayoutImgTab" TargetType="StackLayout">
+            <Setter Property="Orientation" Value="Vertical"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"></Setter>
+        </Style>
+        
     </Application.Resources>
 </Application>
