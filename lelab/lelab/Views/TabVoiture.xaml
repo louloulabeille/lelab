@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout Style="{StaticResource stackLayoutImgTab}" BackgroundColor="#f4f4f4">
             <!--<Image Source="lab_voiture.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Margin="30,0,30,0"></Image>-->
-            <Image Source="lab_voiture.png" Style="{StaticResource imgTab}"></Image>
+            <Image Source="lab_voiture.png" x:Name="voitureImage" Style="{StaticResource imgTab}"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

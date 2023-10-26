@@ -5,7 +5,7 @@
              Title="Avion">
     <ContentPage.Content>
         <StackLayout Style="{StaticResource stackLayoutImgTab}" BackgroundColor="#e7e0cc">
-            <Image Source="lab_avion.png" Style="{StaticResource imgTab}"></Image>
+            <Image Source="lab_avion.png" x:Name="avionImage" Style="{StaticResource imgTab}"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

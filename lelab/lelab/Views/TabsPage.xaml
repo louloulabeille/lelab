@@ -8,6 +8,7 @@
             <OnPlatform.Android>#508ca7</OnPlatform.Android>
         </OnPlatform>
     </TabbedPage.BarBackgroundColor>
-    <views:TabVoiture></views:TabVoiture>
-    <views:TabAvion></views:TabAvion>
+    <views:TabVoiture IconImageSource="lab_icon_voiture.png"></views:TabVoiture>
+    <views:TabAvion IconImageSource="lab_icon_voiture.png"></views:TabAvion>
+    <views:CountPage IconImageSource="lab_icon_compteur.png"></views:CountPage>
 </TabbedPage>

@@ -15,6 +15,26 @@ namespace lelab.Views
 		public TabAvion ()
 		{
 			InitializeComponent ();
+			avionImage.Opacity = 0;
 		}
-	}
+
+        protected override void OnAppearing()
+        {
+            uint timeLength = 800;
+
+            base.OnAppearing();
+
+            avionImage.TranslationX = -250;
+			avionImage.TranslationY = -150;
+			avionImage.Rotation = 45;
+			avionImage.Scale = 0.7;
+			avionImage.Opacity = 0;
+			// translation
+			avionImage.FadeTo(1, 100);
+			avionImage.TranslateTo(0, 0, timeLength, Easing.SinOut);
+			avionImage.RotateTo(0, timeLength, Easing.SinOut);
+			avionImage.ScaleTo(1,timeLength,Easing.SinOut);
+
+        }
+    }
 }
