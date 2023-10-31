@@ -16,6 +16,7 @@ namespace lelab
             //DependencyService.Register<MockDataStore>();
             //MainPage = new CountPage();
             MainPage = new NavigationPage(new MenuPage());
+            //MainPage = new AppShell(); ;
         }
 
         protected override void OnStart()

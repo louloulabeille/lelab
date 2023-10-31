@@ -1,7 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:lelab.Views"
-            x:Class="lelab.Views.TabsPage" Title="Tabs">
+            x:Class="lelab.Views.TabsPage" Title="Tabs" xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
+    
+    <TabbedPage.UnselectedTabColor>
+        <OnPlatform x:TypeArguments="Color">
+            <OnPlatform.Android>Black</OnPlatform.Android>
+        </OnPlatform>
+    </TabbedPage.UnselectedTabColor>
+    <TabbedPage.SelectedTabColor>
+        <OnPlatform x:TypeArguments="Color">
+            <OnPlatform.Android>White</OnPlatform.Android>
+        </OnPlatform>
+    </TabbedPage.SelectedTabColor>
     <TabbedPage.BarBackgroundColor>
         <OnPlatform x:TypeArguments="Color">
             <OnPlatform.iOS>White</OnPlatform.iOS>
@@ -11,4 +23,5 @@
     <views:TabVoiture IconImageSource="lab_icon_voiture.png"></views:TabVoiture>
     <views:TabAvion IconImageSource="lab_icon_voiture.png"></views:TabAvion>
     <views:CountPage IconImageSource="lab_icon_compteur.png"></views:CountPage>
+    
 </TabbedPage>
