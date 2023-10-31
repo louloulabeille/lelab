@@ -13,7 +13,7 @@ namespace lelab
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<MockDataStore>();
             //MainPage = new CountPage();
             MainPage = new NavigationPage(new MenuPage());
         }

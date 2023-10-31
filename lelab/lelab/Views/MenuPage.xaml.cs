@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +13,7 @@ namespace lelab.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage
     {
+
         public MenuPage()
         {
             InitializeComponent();
@@ -31,6 +33,11 @@ namespace lelab.Views
         private void ListPageButtonClick(object sender, EventArgs e)
         {
             this.Navigation.PushAsync(new ListPage());
+        }
+
+        private void Forms_3_5ButtonClick(object sender, EventArgs e)
+        {
+            this.Navigation.PushAsync(new Form_3_5_Page());
         }
     }
 }

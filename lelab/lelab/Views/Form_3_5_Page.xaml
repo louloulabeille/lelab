@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lelab.Views.Form_3_5_Page"
+             Title="Nouveautés">
+    <NavigationPage.TitleView>
+        <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="Aquamarine">
+            <Image Source="lab_logo.png" HeightRequest="40"></Image>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
